@@ -1,0 +1,5 @@
+project_id      = "ben-baker-dev"
+region          = "us-central1"
+github_repo     = "ben-baker-software/portfolio"
+service_name    = "portfolio"
+container_image = "gcr.io/your-project-id/portfolio:latest"
