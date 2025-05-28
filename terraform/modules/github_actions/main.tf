@@ -28,6 +28,7 @@ resource "google_iam_workload_identity_pool_provider" "github_actions_provider" 
     allowed_audiences = [var.github_repo]
     issuer_uri        = "https://token.actions.githubusercontent.com"
   }
+  attribute_condition = "assertion.repository == '${var.github_repo}'"
 }
 
 # Allow GitHub Actions to impersonate the service account
